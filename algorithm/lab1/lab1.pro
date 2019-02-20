@@ -6,8 +6,10 @@ CONFIG -= qt
 SOURCES += \
         main.cpp \
     edge.cpp \
-    graph.cpp
+    graph.cpp \
+    subset.cpp
 
 HEADERS += \
     edge.h \
-    graph.h
+    graph.h \
+    subset.h
