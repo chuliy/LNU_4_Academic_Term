@@ -1,7 +1,7 @@
 #include "edge.h"
 
 Edge::Edge()
-    :mFirstVertex(0), mSecondVertex(0), mWeight(0.0)
+    :mFirstVertex(0), mSecondVertex(0), mWeight(0)
 {   }
 
 size_t Edge::firstVertex() const
