@@ -6,16 +6,16 @@ class Subset
 {
 public:
     Subset();
-    Subset(int16_t parent, int16_t rank);
-    int16_t parent() const;
-    void setParent(const int16_t &parent);
+    Subset(size_t parent, size_t rank);
+    size_t parent() const;
+    void setParent(const size_t &parent);
 
-    int16_t rank() const;
-    void setRank(const int16_t &rank);
+    size_t rank() const;
+    void setRank(const size_t &rank);
 
 private:
-    int16_t mParent;
-    int16_t mRank;
+    size_t mParent;
+    size_t mRank;
 };
 
 #endif // SUBSET_H

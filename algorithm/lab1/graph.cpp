@@ -1,18 +1,18 @@
 #include "graph.h"
 
 
-Graph::Graph(int16_t vertices, int16_t edges)
+Graph::Graph(size_t vertices, size_t edges)
     :mVertices(vertices),mEdges(edges)
 {
-    mEdgesArray = new Edge[static_cast<size_t>(mEdges)];
+    mEdgesArray = new Edge[mEdges];
 }
 
-int16_t Graph::vertices() const
+size_t Graph::vertices() const
 {
     return mVertices;
 }
 
-int16_t Graph::edges() const
+size_t Graph::edges() const
 {
     return mEdges;
 }

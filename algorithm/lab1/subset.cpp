@@ -6,28 +6,28 @@ Subset::Subset()
 
 }
 
-Subset::Subset(int16_t parent, int16_t rank)
+Subset::Subset(size_t parent, size_t rank)
     :mParent(parent),mRank(rank)
 {
 
 }
 
-int16_t Subset::parent() const
+size_t Subset::parent() const
 {
     return mParent;
 }
 
-void Subset::setParent(const int16_t &parent)
+void Subset::setParent(const size_t &parent)
 {
     mParent = parent;
 }
 
-int16_t Subset::rank() const
+size_t Subset::rank() const
 {
     return mRank;
 }
 
-void Subset::setRank(const int16_t &rank)
+void Subset::setRank(const size_t &rank)
 {
     mRank = rank;
 }

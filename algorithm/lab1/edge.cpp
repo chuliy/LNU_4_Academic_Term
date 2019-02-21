@@ -4,37 +4,37 @@ Edge::Edge()
     :mFirstVertex(0), mSecondVertex(0), mWeight(0.0)
 {   }
 
-int16_t Edge::firstVertex() const
+size_t Edge::firstVertex() const
 {
     return mFirstVertex;
 }
 
-void Edge::setFirstVertex(const int16_t &firstVertex)
+void Edge::setFirstVertex(const size_t &firstVertex)
 {
     mFirstVertex = firstVertex;
 }
 
-int16_t Edge::secondVertex() const
+size_t Edge::secondVertex() const
 {
     return mSecondVertex;
 }
 
-void Edge::setSecondVertex(const int16_t &secondVertex)
+void Edge::setSecondVertex(const size_t &secondVertex)
 {
     mSecondVertex = secondVertex;
 }
 
-double Edge::weight() const
+size_t Edge::weight() const
 {
     return mWeight;
 }
 
-void Edge::setWeight(double weight)
+void Edge::setWeight(size_t weight)
 {
     mWeight = weight;
 }
 
-void Edge::setAll(int16_t first, int16_t second, double weight)
+void Edge::setAll(size_t first, size_t second, size_t weight)
 {
     mFirstVertex = first;
     mSecondVertex = second;

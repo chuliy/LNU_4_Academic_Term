@@ -6,23 +6,23 @@ class Edge
 {
 public:
     Edge();
-    Edge(int16_t first, int16_t second, double weight);
+    Edge(size_t first, size_t second, size_t weight);
 
-    int16_t firstVertex() const;
-    void setFirstVertex(const int16_t &firstVertex);
+    size_t firstVertex() const;
+    void setFirstVertex(const size_t &firstVertex);
 
-    int16_t secondVertex() const;
-    void setSecondVertex(const int16_t &secondVertex);
+    size_t secondVertex() const;
+    void setSecondVertex(const size_t &secondVertex);
 
-    double weight() const;
-    void setWeight(double weight);
+    size_t weight() const;
+    void setWeight(size_t weight);
 
-    void setAll(int16_t first, int16_t second, double weight);
+    void setAll(size_t first, size_t second, size_t weight);
 
 private:
-    int16_t mFirstVertex;
-    int16_t mSecondVertex;
-    double mWeight;
+    size_t mFirstVertex;
+    size_t mSecondVertex;
+    size_t mWeight;
 };
 
 #endif // EDGE_H

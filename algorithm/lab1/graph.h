@@ -5,15 +5,15 @@
 class Graph
 {
 public:
-    Graph(int16_t vertices, int16_t edges);
+    Graph(size_t vertices, size_t edges);
 
-    int16_t vertices() const;
+    size_t vertices() const;
 
-    int16_t edges() const;
+    size_t edges() const;
     Edge* mEdgesArray;
 private:
-    int16_t mVertices;
-    int16_t mEdges;
+    size_t mVertices;
+    size_t mEdges;
 
 };
 
