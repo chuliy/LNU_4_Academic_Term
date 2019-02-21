@@ -7,9 +7,11 @@ SOURCES += \
         main.cpp \
     edge.cpp \
     graph.cpp \
-    subset.cpp
+    subset.cpp \
+    logic.cpp
 
 HEADERS += \
     edge.h \
     graph.h \
-    subset.h
+    subset.h \
+    logic.h

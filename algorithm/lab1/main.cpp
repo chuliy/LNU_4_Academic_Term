@@ -39,9 +39,9 @@ void KruskalMST(Graph* graph)
 {
     int16_t V = graph->vertices();
     size_t aaa = static_cast<size_t>(V);
-    Edge *result = new Edge[aaa]; // Tnis will store the resultant MST
-    int e = 0; // An index variable, used for result[]
-    int i = 0; // An index variable, used for sorted edges
+    Edge *result = new Edge[aaa];
+    int e = 0;
+    int i = 0;
 
     qsort(graph->mEdgesArray, static_cast<size_t>(graph->edges()), sizeof(graph->mEdgesArray[0]), myComp);
 
@@ -61,19 +61,13 @@ void KruskalMST(Graph* graph)
         int x = find(subsets, next_edge.firstVertex());
         int y = find(subsets, next_edge.secondVertex());
 
-        // If including this edge does't cause cycle,
-        // include it in result and increment the index
-        // of result for next edge
         if (x != y)
         {
             result[e++] = next_edge;
             Union(subsets, x, y);
         }
-        // Else discard the next_edge
     }
 
-    // print the contents of result[] to display the
-    // built MST
     printf("Following are the edges in the constructed MST\n");
     for (i = 0; i < e; ++i)
         printf("%d -- %d == %f\n", result[i].firstVertex(), result[i].secondVertex(),
@@ -81,47 +75,24 @@ void KruskalMST(Graph* graph)
     return;
 }
 
-// Driver program to test above functions
 int main()
 {
-    /* Let us create following weighted graph
-            10
-        0--------1
-        | \	     |
-       6|   5\   |15
-        |	   \ |
-        2--------3
-            4	 */
-    int16_t V = 4; // Number of vertices in graph
-    int16_t E = 5; // Number of edges in graph
+
+    std::cout<<"input v and e"<<std::endl;
+    int16_t V ;
+    int16_t E ;
+    std::cin>>V>>E;
     Graph *graph = new Graph(V,E);
 
-
-    // add edge 0-1
-    graph->mEdgesArray[0].setFirstVertex(0);
-    graph->mEdgesArray[0].setSecondVertex(1);
-    graph->mEdgesArray[0].setWeight(10);
-
-    // add edge 0-2
-    graph->mEdgesArray[1].setFirstVertex(0);
-    graph->mEdgesArray[1].setSecondVertex(2);
-    graph->mEdgesArray[1].setWeight(6);
-
-    // add edge 0-3
-    graph->mEdgesArray[2].setFirstVertex(0);
-    graph->mEdgesArray[2].setSecondVertex(3);
-    graph->mEdgesArray[2].setWeight(5);
-
-    // add edge 1-3
-    graph->mEdgesArray[3].setFirstVertex(1);
-    graph->mEdgesArray[3].setSecondVertex(3);
-    graph->mEdgesArray[3].setWeight(15);
-
-    // add edge 2-3
-    graph->mEdgesArray[4].setFirstVertex(2);
-    graph->mEdgesArray[4].setSecondVertex(3);
-    graph->mEdgesArray[4].setWeight(4);
-
+    for(size_t i = 0; i != static_cast<size_t>(E) ; ++i)
+    {
+        std::cout<<"input first, second, weight"<<std::endl;
+        int16_t f,s;
+        double w;
+        std::cin>>f>>s>>w;
+        --f;--s;
+        graph->mEdgesArray[i].setAll(f,s,w);
+    }
     KruskalMST(graph);
 
     return 0;

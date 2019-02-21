@@ -17,6 +17,8 @@ public:
     double weight() const;
     void setWeight(double weight);
 
+    void setAll(int16_t first, int16_t second, double weight);
+
 private:
     int16_t mFirstVertex;
     int16_t mSecondVertex;

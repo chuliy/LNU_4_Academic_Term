@@ -33,3 +33,10 @@ void Edge::setWeight(double weight)
 {
     mWeight = weight;
 }
+
+void Edge::setAll(int16_t first, int16_t second, double weight)
+{
+    mFirstVertex = first;
+    mSecondVertex = second;
+    mWeight = weight;
+}
