@@ -29,7 +29,7 @@
 .stackreserve 0x00100000
 .subsystem 0x0003       // WINDOWS_CUI
 .corflags 0x00000001    //  ILONLY
-// Image base: 0x000001C1B2560000
+// Image base: 0x000001885B2E0000
 
 
 // =============== CLASS MEMBERS DECLARATION ===================

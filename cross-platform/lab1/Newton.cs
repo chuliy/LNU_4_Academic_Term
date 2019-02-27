@@ -4,46 +4,78 @@ namespace Newton
 {   
     class Program
     {
-        static double EPSILON = 0.00001;
-
         static double func(double x)
         {
-            return x - 2;
+            return x - 10;
+        }
+        public static void Swap<T>(ref T a, ref T b)
+        {
+            T c = a;
+            a = b;
+            b = c;
         }
 
-
-        static double deriveredFunc(double x)
+        static double deriveredFunc(double x, double EPSILON)
         {
             double d = EPSILON / 100;
             return (func(x + d) - func(x)) / d;
         }
-
-       
-        static void newtonRaphson(double x)
+        static double f2p(double x, double EPSILON)
         {
-            double h = func(x) / deriveredFunc(x);
-            int cnt = 0;
-            while (Math.Abs(h) >= EPSILON)
+            double d = EPSILON / 100.0;
+            return ((func(x + d) + func(x - d) - 2 * func(x)) / (d*d));
+        }
+       
+        static void newtonRaphson(double a,double b, double EPSILON)
+        {
+            double x = b;
+            if (func(x) * f2p(x,EPSILON) < 0.0)
             {
-		cnt++;
-                h = func(x) / deriveredFunc(x);
-
-                x = x - h;
+                x = a;
             }
+            else if(Math.Abs(func(x)* f2p(x,EPSILON)) <= EPSILON)
+            {
+                Console.WriteLine("error");
+                return;
+            }
+            int cnt = 0;
+                double h = func(x) / deriveredFunc(x,EPSILON);
+                while (Math.Abs(h) >= EPSILON)
+                {
+                cnt++;
+                    h = func(x) / deriveredFunc(x,EPSILON);
 
-            Console.WriteLine("The value of the"
-                        + " root is : "
-                        + (x * 100.0 / 100.0));
-	    Console.WriteLine("Iteration : " + cnt);
+                    x = x - h;
+                }
+
+                Console.WriteLine("The value of the"
+                            + " root is : "
+                            + Math.Round(x * 100.0) / 100.0);
+            Console.WriteLine("cnt = " + cnt);
+
+            
         }
 
+        // Driver code 
         public static void Main()
         {
-            Console.WriteLine("Input x0");
-            double x0 = Convert.ToDouble(Console.ReadLine());
-            newtonRaphson(x0);
-            Console.ReadLine();
+
+            // Initial values assumed 
+            Console.WriteLine("Input a");
+            double a = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("Input b");
+            double b = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("Input epsilon");
+            double EPSILON = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("Input kmax");
+            int kmax = Convert.ToInt32(Console.ReadLine());
+
+            if (a > b)
+            {
+                Program.Swap(ref a, ref b);
+            }
+
+            newtonRaphson(a,b,EPSILON);
         }
     }
-
 }
