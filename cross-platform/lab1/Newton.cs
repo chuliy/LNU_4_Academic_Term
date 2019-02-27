@@ -25,35 +25,35 @@ namespace Newton
             double d = EPSILON / 100.0;
             return ((func(x + d) + func(x - d) - 2 * func(x)) / (d*d));
         }
-       
-        static void newtonRaphson(double a,double b, double EPSILON)
+
+        private static void Newton(double a, double b, double eps, int kmax)
         {
-            double x = b;
-            if (func(x) * f2p(x,EPSILON) < 0.0)
+            double dx, x0;
+            int i;
+            if (a > b)
             {
-                x = a;
-            }
-            else if(Math.Abs(func(x)* f2p(x,EPSILON)) <= EPSILON)
-            {
-                Console.WriteLine("error");
+                Console.WriteLine("A is bigger than B, check the [A,B] interval");
                 return;
             }
-            int cnt = 0;
-                double h = func(x) / deriveredFunc(x,EPSILON);
-                while (Math.Abs(h) >= EPSILON)
+            if (f(a) * f2p(a) > 0)
+                x0 = a;
+            else
+                x0 = b;
+            for (i = 1; i < kmax; i++)
+            {
+                dx = f(x0) / deriveredFunc(x0);
+                x0 -= dx;
+                if (Math.Abs(dx) < eps)
                 {
-                cnt++;
-                    h = func(x) / deriveredFunc(x,EPSILON);
-
-                    x = x - h;
+                    Console.WriteLine("Result:");
+                    Console.WriteLine("\tX = " + x0);
+                    Console.WriteLine("\tf(x) = " + f(x0));
+                    Console.WriteLine("\tNumber of iteration = " + i);
+                    return;
                 }
-
-                Console.WriteLine("The value of the"
-                            + " root is : "
-                            + Math.Round(x * 100.0) / 100.0);
-            Console.WriteLine("cnt = " + cnt);
-
-            
+            }
+            Console.WriteLine("For entered max number of iterations, the root is not found");
+            return;
         }
 
         // Driver code 
@@ -75,7 +75,7 @@ namespace Newton
                 Program.Swap(ref a, ref b);
             }
 
-            newtonRaphson(a,b,EPSILON);
+            newtonRaphson(a,b,EPSILON,kmax);
         }
     }
 }

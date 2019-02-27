@@ -4,7 +4,10 @@
 Graph::Graph(size_t vertices, size_t edges)
     :mVertices(vertices),mEdges(edges)
 {
-    mEdgesArray = new Edge[mEdges];
+    for (size_t i = 0 ; i < mEdges; ++i)
+    {
+        mEdgesArray.push_back(Edge());
+    }
 }
 
 size_t Graph::vertices() const

@@ -13,11 +13,10 @@ int myComp(const void *a, const void *b);
 class Logic
 {
 public:
-    size_t find(std::vector<Subset> &subsets,const size_t i);
+    static size_t find(std::vector<Subset> &subsets,const size_t i);
 
-    void Union(std::vector<Subset> &subsets, size_t x, size_t y);
-    void Kruskal(Graph* graph);
-
+    static void Union(std::vector<Subset> &subsets, size_t x, size_t y);
+    static void Kruskal(Graph* graph);
 
     Logic()=delete;
 };
