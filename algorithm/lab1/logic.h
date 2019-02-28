@@ -8,7 +8,6 @@
 #include <vector>
 #include <algorithm>
 #include <iostream>
-int myComp(const void *a, const void *b);
 
 class Logic
 {

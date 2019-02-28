@@ -71,16 +71,10 @@ void Logic::Kruskal(Graph *graph)
     for (i = 0; i < e; ++i)
     {
         w+=result[i].weight();
-        std::cout<<result[i].firstVertex()<<" -- "<< result[i].secondVertex()<<"--"<<result[i].weight()<<std::endl;
+        std::cout<<result[i].firstVertex()<<" -- "<< result[i].secondVertex()<<"--"<<
+                   result[i].weight()<<std::endl;
     }
     std::cout<<"weight = "<< w<<std::endl;
     return;
 }
 
-
-int myComp(const void *a, const void *b)
-{
-    const Edge* a1 = static_cast<const Edge*>(a);
-    const Edge* b1 = static_cast<const Edge*>(b);
-    return a1->weight() > b1->weight();
-}
