@@ -67,10 +67,13 @@ void Logic::Kruskal(Graph *graph)
             Union(subsets, x, y);
         }
     }
-
-    std::cout<<"Following are the edges in the constructed MST\n";
+    size_t w = 0;
     for (i = 0; i < e; ++i)
-        std::cout<<result[i].firstVertex()<<" -- "<< result[i].secondVertex()<<"--"<<result[i].weight();
+    {
+        w+=result[i].weight();
+        std::cout<<result[i].firstVertex()<<" -- "<< result[i].secondVertex()<<"--"<<result[i].weight()<<std::endl;
+    }
+    std::cout<<"weight = "<< w<<std::endl;
     return;
 }
 
