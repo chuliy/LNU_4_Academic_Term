@@ -41,10 +41,6 @@ void Logic::Kruskal(Graph *graph)
         }
     };
     std::sort(graph->mEdgesArray.begin(), graph->mEdgesArray.end(), less_than_key());
-    for(auto a : graph->mEdgesArray)
-    {
-        std::cout<<a.weight();
-    }
     std::vector<Subset> subsets(V);
 
     for (size_t v = 0; v < V; ++v)
