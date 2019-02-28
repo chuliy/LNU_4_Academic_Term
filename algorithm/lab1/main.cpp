@@ -2,6 +2,7 @@
 #include "graph.h"
 #include "subset.h"
 #include "logic.h"
+
 int main()
 {
     std::cout<<"input v and e"<<std::endl;

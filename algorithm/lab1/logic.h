@@ -17,7 +17,11 @@ public:
     static void Union(std::vector<Subset> &subsets, size_t x, size_t y);
     static void Kruskal(Graph* graph);
 
+    static void Prims(Graph* graph);
+
     Logic()=delete;
+private:
+    static bool checkBoolVector(const std::vector<bool> &vector);
 };
 
 #endif // LOGIC_H

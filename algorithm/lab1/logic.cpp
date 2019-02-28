@@ -51,7 +51,6 @@ void Logic::Kruskal(Graph *graph)
 
     while (e < V - 1)
     {
-
         Edge next_edge = graph->mEdgesArray[i++];
 
         size_t x = find(subsets, next_edge.firstVertex());
@@ -74,3 +73,40 @@ void Logic::Kruskal(Graph *graph)
     return;
 }
 
+void Logic::Prims(Graph *graph)
+{
+    std::vector<bool> lVisited(graph->vertices(),false);
+    std::vector<Edge> lEdges;
+    std::vector<size_t> lVertex(graph->vertices());
+    struct less_than_key
+    {
+        inline bool operator() (const Edge& struct1, const Edge& struct2)
+        {
+            return (struct1.weight() < struct2.weight());
+        }
+    };
+    std::sort(graph->mEdgesArray.begin(), graph->mEdgesArray.end(), less_than_key());
+    lVisited[0] = true;
+    while(!checkBoolVector(lVisited))
+    {
+        for(auto localEdge : graph->mEdgesArray)
+        {
+            if((lVisited[localEdge.firstVertex()] && lVisited[localEdge.secondVertex()] == false)
+                    ||(lVisited[localEdge.firstVertex()] == false && lVisited[localEdge.secondVertex()] == false)
+
+        }
+    }
+
+}
+
+bool Logic::checkBoolVector(const std::vector<bool> &vector)
+{
+    for(auto a : vector)
+    {
+        if(a == false)
+        {
+            return false;
+        }
+    }
+    return true;
+}
