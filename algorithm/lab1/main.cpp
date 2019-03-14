@@ -17,7 +17,8 @@ int main()
         std::cin>>f>>s>>w;
         graph->mEdgesArray[i].setAll(f,s,w);
     }
-    Logic::Kruskal(graph);
+    //Logic::Kruskal(graph);
+    Logic::Prims(graph);
     std::cout<<std::endl;
     return 0;
 }
