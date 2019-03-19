@@ -1,0 +1,2 @@
+C:\Users\Igor\source\repos\Bisection\Bisection\obj\Debug\Bisection.csprojAssemblyReference.cache
+C:\Users\Igor\source\repos\Bisection\Bisection\obj\Debug\Bisection.csproj.CoreCompileInputs.cache

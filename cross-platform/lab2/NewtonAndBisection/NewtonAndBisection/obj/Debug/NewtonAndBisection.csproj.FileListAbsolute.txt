@@ -1,0 +1,7 @@
+C:\LNU_4_Academic_Term\cross-platform\lab2\NewtonAndBisection\NewtonAndBisection\bin\Debug\NewtonAndBisection.exe.config
+C:\LNU_4_Academic_Term\cross-platform\lab2\NewtonAndBisection\NewtonAndBisection\bin\Debug\NewtonAndBisection.exe
+C:\LNU_4_Academic_Term\cross-platform\lab2\NewtonAndBisection\NewtonAndBisection\bin\Debug\NewtonAndBisection.pdb
+C:\LNU_4_Academic_Term\cross-platform\lab2\NewtonAndBisection\NewtonAndBisection\obj\Debug\NewtonAndBisection.csprojAssemblyReference.cache
+C:\LNU_4_Academic_Term\cross-platform\lab2\NewtonAndBisection\NewtonAndBisection\obj\Debug\NewtonAndBisection.csproj.CoreCompileInputs.cache
+C:\LNU_4_Academic_Term\cross-platform\lab2\NewtonAndBisection\NewtonAndBisection\obj\Debug\NewtonAndBisection.exe
+C:\LNU_4_Academic_Term\cross-platform\lab2\NewtonAndBisection\NewtonAndBisection\obj\Debug\NewtonAndBisection.pdb

@@ -1,0 +1,7 @@
+C:\Users\Igor\source\repos\Bisection\Bisection\obj\Release\Bisection.csproj.CoreCompileInputs.cache
+C:\Users\Igor\source\repos\Bisection\Bisection\bin\Release\Bisection.exe.config
+C:\Users\Igor\source\repos\Bisection\Bisection\bin\Release\Bisection.exe
+C:\Users\Igor\source\repos\Bisection\Bisection\bin\Release\Bisection.pdb
+C:\Users\Igor\source\repos\Bisection\Bisection\obj\Release\Bisection.exe
+C:\Users\Igor\source\repos\Bisection\Bisection\obj\Release\Bisection.pdb
+C:\Users\Igor\source\repos\Bisection\Bisection\obj\Release\Bisection.csprojAssemblyReference.cache
