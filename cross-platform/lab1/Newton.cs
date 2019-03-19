@@ -6,7 +6,7 @@ namespace Newton
     {
         static double func(double x)
         {
-            return x - 10;
+            return x*x - 4;
         }
         public static void Swap<T>(ref T a, ref T b)
         {
@@ -35,19 +35,18 @@ namespace Newton
                 Console.WriteLine("A is bigger than B, check the [A,B] interval");
                 return;
             }
-            if (f(a) * f2p(a) > 0)
+            if (func(a) * f2p(a,eps) > 0)
                 x0 = a;
             else
                 x0 = b;
             for (i = 1; i < kmax; i++)
             {
-                dx = f(x0) / deriveredFunc(x0);
+                dx = func(x0) / deriveredFunc(x0, eps);
                 x0 -= dx;
                 if (Math.Abs(dx) < eps)
                 {
                     Console.WriteLine("Result:");
                     Console.WriteLine("\tX = " + x0);
-                    Console.WriteLine("\tf(x) = " + f(x0));
                     Console.WriteLine("\tNumber of iteration = " + i);
                     return;
                 }
@@ -75,7 +74,8 @@ namespace Newton
                 Program.Swap(ref a, ref b);
             }
 
-            newtonRaphson(a,b,EPSILON,kmax);
+            Newton(a,b,EPSILON,kmax);
+            Console.ReadLine();
         }
     }
 }

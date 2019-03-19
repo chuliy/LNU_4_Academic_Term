@@ -14,7 +14,7 @@ namespace Bisection
 
         static double func(double x)
         {
-            return (Math.Pow(Math.E, -x) - Math.Log10(1 - Math.Pow(x, 2)) - 2);
+            return x*x - 4.0;
         }
 
         public static void bisection(double a, double b, double EPSILON)
