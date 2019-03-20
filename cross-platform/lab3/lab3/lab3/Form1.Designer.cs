@@ -28,197 +28,248 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.mMethodLabel = new System.Windows.Forms.Label();
+            this.mEquationLabel = new System.Windows.Forms.Label();
+            this.mInputDateLabel = new System.Windows.Forms.Label();
+            this.mA = new System.Windows.Forms.Label();
+            this.mB = new System.Windows.Forms.Label();
+            this.mEps = new System.Windows.Forms.Label();
+            this.mKMax = new System.Windows.Forms.Label();
+            this.mOutputDateLabel = new System.Windows.Forms.Label();
+            this.mX = new System.Windows.Forms.Label();
+            this.mCounterLabel = new System.Windows.Forms.Label();
+            this.mMethodComboBox = new System.Windows.Forms.ComboBox();
+            this.mEquationComboBox = new System.Windows.Forms.ComboBox();
+            this.mATextBox = new System.Windows.Forms.TextBox();
+            this.mBTextBox = new System.Windows.Forms.TextBox();
+            this.mEpsTextBox = new System.Windows.Forms.TextBox();
+            this.mKmaxTextBox = new System.Windows.Forms.TextBox();
+            this.mXTextBox = new System.Windows.Forms.TextBox();
+            this.mCounterTextBox = new System.Windows.Forms.TextBox();
+            this.mSolveButton = new System.Windows.Forms.Button();
+            this.mClearButton = new System.Windows.Forms.Button();
+            this.mFXTextBox = new System.Windows.Forms.TextBox();
+            this.mFXLabel = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // label1
+            // mMethodLabel
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(32, 23);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(35, 13);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "label1";
+            this.mMethodLabel.AutoSize = true;
+            this.mMethodLabel.Location = new System.Drawing.Point(32, 23);
+            this.mMethodLabel.Name = "mMethodLabel";
+            this.mMethodLabel.Size = new System.Drawing.Size(80, 13);
+            this.mMethodLabel.TabIndex = 0;
+            this.mMethodLabel.Text = "Оберіть метод";
             // 
-            // label2
+            // mEquationLabel
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(32, 106);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(35, 13);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "label2";
+            this.mEquationLabel.AutoSize = true;
+            this.mEquationLabel.Location = new System.Drawing.Point(32, 106);
+            this.mEquationLabel.Name = "mEquationLabel";
+            this.mEquationLabel.Size = new System.Drawing.Size(93, 13);
+            this.mEquationLabel.TabIndex = 1;
+            this.mEquationLabel.Text = "Оберіть рівняння";
             // 
-            // label3
+            // mInputDateLabel
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(277, 23);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(35, 13);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "label3";
+            this.mInputDateLabel.AutoSize = true;
+            this.mInputDateLabel.Location = new System.Drawing.Point(267, 23);
+            this.mInputDateLabel.Name = "mInputDateLabel";
+            this.mInputDateLabel.Size = new System.Drawing.Size(58, 13);
+            this.mInputDateLabel.TabIndex = 2;
+            this.mInputDateLabel.Text = "Вхідні дані";
             // 
-            // label4
+            // mA
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(186, 55);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(35, 13);
-            this.label4.TabIndex = 3;
-            this.label4.Text = "label4";
+            this.mA.AutoSize = true;
+            this.mA.Location = new System.Drawing.Point(202, 51);
+            this.mA.Name = "mA";
+            this.mA.Size = new System.Drawing.Size(25, 13);
+            this.mA.TabIndex = 3;
+            this.mA.Text = "a = ";
             // 
-            // label5
+            // mB
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(186, 92);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(35, 13);
-            this.label5.TabIndex = 4;
-            this.label5.Text = "label5";
+            this.mB.AutoSize = true;
+            this.mB.Location = new System.Drawing.Point(205, 92);
+            this.mB.Name = "mB";
+            this.mB.Size = new System.Drawing.Size(22, 13);
+            this.mB.TabIndex = 4;
+            this.mB.Text = "b =";
             // 
-            // label6
+            // mEps
             // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(186, 130);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(35, 13);
-            this.label6.TabIndex = 5;
-            this.label6.Text = "label6";
+            this.mEps.AutoSize = true;
+            this.mEps.Location = new System.Drawing.Point(194, 126);
+            this.mEps.Name = "mEps";
+            this.mEps.Size = new System.Drawing.Size(36, 13);
+            this.mEps.TabIndex = 5;
+            this.mEps.Text = "eps = ";
             // 
-            // label7
+            // mKMax
             // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(186, 164);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(35, 13);
-            this.label7.TabIndex = 6;
-            this.label7.Text = "label7";
+            this.mKMax.AutoSize = true;
+            this.mKMax.Location = new System.Drawing.Point(183, 160);
+            this.mKMax.Name = "mKMax";
+            this.mKMax.Size = new System.Drawing.Size(44, 13);
+            this.mKMax.TabIndex = 6;
+            this.mKMax.Text = "kmax = ";
             // 
-            // label8
+            // mOutputDateLabel
             // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(464, 23);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(35, 13);
-            this.label8.TabIndex = 7;
-            this.label8.Text = "label8";
+            this.mOutputDateLabel.AutoSize = true;
+            this.mOutputDateLabel.Location = new System.Drawing.Point(464, 23);
+            this.mOutputDateLabel.Name = "mOutputDateLabel";
+            this.mOutputDateLabel.Size = new System.Drawing.Size(64, 13);
+            this.mOutputDateLabel.TabIndex = 7;
+            this.mOutputDateLabel.Text = "Вихідні дані";
             // 
-            // label9
+            // mX
             // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(394, 55);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(35, 13);
-            this.label9.TabIndex = 8;
-            this.label9.Text = "label9";
+            this.mX.AutoSize = true;
+            this.mX.Location = new System.Drawing.Point(415, 51);
+            this.mX.Name = "mX";
+            this.mX.Size = new System.Drawing.Size(24, 13);
+            this.mX.TabIndex = 8;
+            this.mX.Text = "x = ";
             // 
-            // label10
+            // mCounterLabel
             // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(394, 92);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(41, 13);
-            this.label10.TabIndex = 9;
-            this.label10.Text = "label10";
+            this.mCounterLabel.AutoSize = true;
+            this.mCounterLabel.Location = new System.Drawing.Point(386, 89);
+            this.mCounterLabel.Name = "mCounterLabel";
+            this.mCounterLabel.Size = new System.Drawing.Size(53, 13);
+            this.mCounterLabel.TabIndex = 9;
+            this.mCounterLabel.Text = "Кількість";
             // 
-            // comboBox1
+            // mMethodComboBox
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(12, 55);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(111, 21);
-            this.comboBox1.TabIndex = 10;
+            this.mMethodComboBox.FormattingEnabled = true;
+            this.mMethodComboBox.Items.AddRange(new object[] {
+            "МПД",
+            "Ньютон"});
+            this.mMethodComboBox.Location = new System.Drawing.Point(12, 55);
+            this.mMethodComboBox.Name = "mMethodComboBox";
+            this.mMethodComboBox.Size = new System.Drawing.Size(111, 21);
+            this.mMethodComboBox.TabIndex = 10;
+            this.mMethodComboBox.SelectedIndexChanged += new System.EventHandler(this.mMethodComboBox_SelectedIndexChanged);
             // 
-            // comboBox2
+            // mEquationComboBox
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(13, 156);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(110, 21);
-            this.comboBox2.TabIndex = 11;
+            this.mEquationComboBox.FormattingEnabled = true;
+            this.mEquationComboBox.Items.AddRange(new object[] {
+            "x^2 - 4 = 0;",
+            "e^(-x) - lg(1 - x^ 2) - 2 = 0;"});
+            this.mEquationComboBox.Location = new System.Drawing.Point(15, 140);
+            this.mEquationComboBox.Name = "mEquationComboBox";
+            this.mEquationComboBox.Size = new System.Drawing.Size(110, 21);
+            this.mEquationComboBox.TabIndex = 11;
             // 
-            // textBox1
+            // mATextBox
             // 
-            this.textBox1.Location = new System.Drawing.Point(252, 47);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 12;
+            this.mATextBox.Location = new System.Drawing.Point(252, 47);
+            this.mATextBox.Name = "mATextBox";
+            this.mATextBox.Size = new System.Drawing.Size(100, 20);
+            this.mATextBox.TabIndex = 12;
             // 
-            // textBox2
+            // mBTextBox
             // 
-            this.textBox2.Location = new System.Drawing.Point(252, 89);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
-            this.textBox2.TabIndex = 13;
+            this.mBTextBox.Location = new System.Drawing.Point(252, 89);
+            this.mBTextBox.Name = "mBTextBox";
+            this.mBTextBox.Size = new System.Drawing.Size(100, 20);
+            this.mBTextBox.TabIndex = 13;
             // 
-            // textBox3
+            // mEpsTextBox
             // 
-            this.textBox3.Location = new System.Drawing.Point(252, 123);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 20);
-            this.textBox3.TabIndex = 14;
+            this.mEpsTextBox.Location = new System.Drawing.Point(252, 123);
+            this.mEpsTextBox.Name = "mEpsTextBox";
+            this.mEpsTextBox.Size = new System.Drawing.Size(100, 20);
+            this.mEpsTextBox.TabIndex = 14;
             // 
-            // textBox4
+            // mKmaxTextBox
             // 
-            this.textBox4.Location = new System.Drawing.Point(252, 157);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(100, 20);
-            this.textBox4.TabIndex = 15;
+            this.mKmaxTextBox.Location = new System.Drawing.Point(252, 157);
+            this.mKmaxTextBox.Name = "mKmaxTextBox";
+            this.mKmaxTextBox.Size = new System.Drawing.Size(100, 20);
+            this.mKmaxTextBox.TabIndex = 15;
             // 
-            // textBox5
+            // mXTextBox
             // 
-            this.textBox5.Location = new System.Drawing.Point(445, 48);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(100, 20);
-            this.textBox5.TabIndex = 16;
+            this.mXTextBox.Location = new System.Drawing.Point(445, 48);
+            this.mXTextBox.Name = "mXTextBox";
+            this.mXTextBox.Size = new System.Drawing.Size(100, 20);
+            this.mXTextBox.TabIndex = 16;
             // 
-            // textBox6
+            // mCounterTextBox
             // 
-            this.textBox6.Location = new System.Drawing.Point(445, 85);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(100, 20);
-            this.textBox6.TabIndex = 17;
+            this.mCounterTextBox.Location = new System.Drawing.Point(445, 85);
+            this.mCounterTextBox.Name = "mCounterTextBox";
+            this.mCounterTextBox.Size = new System.Drawing.Size(100, 20);
+            this.mCounterTextBox.TabIndex = 17;
+            // 
+            // mSolveButton
+            // 
+            this.mSolveButton.Location = new System.Drawing.Point(389, 140);
+            this.mSolveButton.Name = "mSolveButton";
+            this.mSolveButton.Size = new System.Drawing.Size(87, 33);
+            this.mSolveButton.TabIndex = 18;
+            this.mSolveButton.Text = "Розв\'язати";
+            this.mSolveButton.UseVisualStyleBackColor = true;
+            this.mSolveButton.Click += new System.EventHandler(this.mSolveButton_Click);
+            // 
+            // mClearButton
+            // 
+            this.mClearButton.Location = new System.Drawing.Point(491, 140);
+            this.mClearButton.Name = "mClearButton";
+            this.mClearButton.Size = new System.Drawing.Size(92, 33);
+            this.mClearButton.TabIndex = 19;
+            this.mClearButton.Text = "Очистити";
+            this.mClearButton.UseVisualStyleBackColor = true;
+            this.mClearButton.Click += new System.EventHandler(this.mClearButton_Click);
+            // 
+            // mFXTextBox
+            // 
+            this.mFXTextBox.Location = new System.Drawing.Point(445, 114);
+            this.mFXTextBox.Name = "mFXTextBox";
+            this.mFXTextBox.Size = new System.Drawing.Size(100, 20);
+            this.mFXTextBox.TabIndex = 20;
+            // 
+            // mFXLabel
+            // 
+            this.mFXLabel.AutoSize = true;
+            this.mFXLabel.Location = new System.Drawing.Point(404, 117);
+            this.mFXLabel.Name = "mFXLabel";
+            this.mFXLabel.Size = new System.Drawing.Size(33, 13);
+            this.mFXLabel.TabIndex = 21;
+            this.mFXLabel.Text = "f(x) = ";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(644, 255);
-            this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.comboBox2);
-            this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.label10);
-            this.Controls.Add(this.label9);
-            this.Controls.Add(this.label8);
-            this.Controls.Add(this.label7);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
+            this.ClientSize = new System.Drawing.Size(589, 185);
+            this.Controls.Add(this.mFXLabel);
+            this.Controls.Add(this.mFXTextBox);
+            this.Controls.Add(this.mClearButton);
+            this.Controls.Add(this.mSolveButton);
+            this.Controls.Add(this.mCounterTextBox);
+            this.Controls.Add(this.mXTextBox);
+            this.Controls.Add(this.mKmaxTextBox);
+            this.Controls.Add(this.mEpsTextBox);
+            this.Controls.Add(this.mBTextBox);
+            this.Controls.Add(this.mATextBox);
+            this.Controls.Add(this.mEquationComboBox);
+            this.Controls.Add(this.mMethodComboBox);
+            this.Controls.Add(this.mCounterLabel);
+            this.Controls.Add(this.mX);
+            this.Controls.Add(this.mOutputDateLabel);
+            this.Controls.Add(this.mKMax);
+            this.Controls.Add(this.mEps);
+            this.Controls.Add(this.mB);
+            this.Controls.Add(this.mA);
+            this.Controls.Add(this.mInputDateLabel);
+            this.Controls.Add(this.mEquationLabel);
+            this.Controls.Add(this.mMethodLabel);
             this.Name = "Form1";
             this.Text = "Form1";
             this.ResumeLayout(false);
@@ -228,24 +279,28 @@
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.Label mMethodLabel;
+        private System.Windows.Forms.Label mEquationLabel;
+        private System.Windows.Forms.Label mInputDateLabel;
+        private System.Windows.Forms.Label mA;
+        private System.Windows.Forms.Label mB;
+        private System.Windows.Forms.Label mEps;
+        private System.Windows.Forms.Label mKMax;
+        private System.Windows.Forms.Label mOutputDateLabel;
+        private System.Windows.Forms.Label mX;
+        private System.Windows.Forms.Label mCounterLabel;
+        private System.Windows.Forms.ComboBox mMethodComboBox;
+        private System.Windows.Forms.ComboBox mEquationComboBox;
+        private System.Windows.Forms.TextBox mATextBox;
+        private System.Windows.Forms.TextBox mBTextBox;
+        private System.Windows.Forms.TextBox mEpsTextBox;
+        private System.Windows.Forms.TextBox mKmaxTextBox;
+        private System.Windows.Forms.TextBox mXTextBox;
+        private System.Windows.Forms.TextBox mCounterTextBox;
+        private System.Windows.Forms.Button mSolveButton;
+        private System.Windows.Forms.Button mClearButton;
+        private System.Windows.Forms.TextBox mFXTextBox;
+        private System.Windows.Forms.Label mFXLabel;
     }
 }
 

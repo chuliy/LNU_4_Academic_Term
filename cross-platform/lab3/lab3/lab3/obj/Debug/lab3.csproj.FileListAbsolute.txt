@@ -1,0 +1,10 @@
+C:\LNU_4_Academic_Term\cross-platform\lab3\lab3\lab3\bin\Debug\lab3.exe.config
+C:\LNU_4_Academic_Term\cross-platform\lab3\lab3\lab3\bin\Debug\lab3.exe
+C:\LNU_4_Academic_Term\cross-platform\lab3\lab3\lab3\bin\Debug\lab3.pdb
+C:\LNU_4_Academic_Term\cross-platform\lab3\lab3\lab3\obj\Debug\lab3.csprojAssemblyReference.cache
+C:\LNU_4_Academic_Term\cross-platform\lab3\lab3\lab3\obj\Debug\lab3.Form1.resources
+C:\LNU_4_Academic_Term\cross-platform\lab3\lab3\lab3\obj\Debug\lab3.Properties.Resources.resources
+C:\LNU_4_Academic_Term\cross-platform\lab3\lab3\lab3\obj\Debug\lab3.csproj.GenerateResource.cache
+C:\LNU_4_Academic_Term\cross-platform\lab3\lab3\lab3\obj\Debug\lab3.csproj.CoreCompileInputs.cache
+C:\LNU_4_Academic_Term\cross-platform\lab3\lab3\lab3\obj\Debug\lab3.exe
+C:\LNU_4_Academic_Term\cross-platform\lab3\lab3\lab3\obj\Debug\lab3.pdb
